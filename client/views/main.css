@@ -11,15 +11,13 @@
 }
 
 .simple-gallery a, .simple-gallery a:hover {
-  color: #61B6DA;
-}
-
-.simple-gallery a, .simple-gallery a:hover {
-  color: #61B6DA;
+  color: #909090;
+  text-decoration: none;
 }
 
 .simple-gallery .menu {
   display: table;
+  text-align: center;
   width: 100%;
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
@@ -30,6 +28,7 @@
   color: #fff;
   cursor: pointer;
   padding: 18px;
+  margin-bottom: 0;
 }
 
 .simple-gallery .post .image-container img {
@@ -174,6 +173,13 @@
   text-align: left;
   margin: 10px 0;
   padding: 0 10px;
+}
+
+a.category {
+  color: rgb(0, 0, 0);
+  font-size: 1.5em;
+  margin: 0px 10px;
+  line-height: 50px;
 }
 
 /*.category-icon-container {

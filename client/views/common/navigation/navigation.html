@@ -1,8 +1,9 @@
 <template name="Navigation">
   <div class="menu">
     <h1><a href="{{pathFor route='home'}}">TernopilJS</a></h1>
-    <h4><a href="{{pathFor route='categoryPage' name='news'}}" class="category">news</a></h4>
-    <h4><a href="{{pathFor route='categoryPage' name='videos'}}" class="category">videos</a></h4>
-    <h4><a href="{{pathFor route='categoryPage' name='presentations'}}" class="category">presentations</a></h4>
+    <a href="{{pathFor route='categoryPage' name='presentations'}}" class="category glyphicon glyphicon-link"></a>
+    <a href="{{pathFor route='categoryPage' name='news'}}" class="category glyphicon glyphicon-bullhorn"></a>
+    <a href="{{pathFor route='categoryPage' name='videos'}}" class="category glyphicon glyphicon-play"></a>
+    <a href="{{pathFor route='categoryPage' name='presentations'}}" class="category glyphicon glyphicon-blackboard"></a>
   </div>
 </template>
