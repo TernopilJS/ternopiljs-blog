@@ -1,0 +1,11 @@
+<template name="Image">
+  <figure class="image clickable" data-toggle="modal" data-target="#modal-image">
+    <div class="image-container">
+      <img src="{{url}}">
+    </div>
+    <footer class="title">
+      {{title}}
+      <p class="date">{{fromNow createdAt}}</p>
+    </footer>
+  </figure>
+</template>

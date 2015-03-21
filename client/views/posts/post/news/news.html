@@ -1,0 +1,17 @@
+<template name="News">
+  <section class="post clickable presentation" data-toggle="modal" data-target="#modal-post">
+    {{#if image.src}}
+      <div class="image-container">
+        <img src="{{image.src}}">
+      </div>
+    {{/if}}
+    <footer class="title">
+      <i class="glyphicon glyphicon-bullhorn"></i>
+      {{title}}
+      {{#if content}}
+        <p class="content">{{content}}</p>
+      {{/if}}
+      <p class="date">{{fromNow createdAt}}</p>
+    </footer>
+  </section>
+</template>

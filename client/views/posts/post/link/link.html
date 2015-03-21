@@ -1,0 +1,15 @@
+<template name="Link">
+  <section class="post clickable hyperlink">
+    <a href="{{url}}" class="hyperlink" target="_blank"></a>
+    {{#if image.src}}
+      <div class="image-container">
+        <img src="{{image.src}}">
+      </div>
+    {{/if}}
+    <footer class="title">
+      <i class="glyphicon glyphicon-link"></i>
+      {{title}}
+      <p class="date">{{fromNow createdAt}}</p>
+    </footer>
+  </section>
+</template>

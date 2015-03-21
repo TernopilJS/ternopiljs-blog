@@ -1,0 +1,197 @@
+.simple-gallery {
+  padding-top: 15px;
+  letter-spacing: 1px;
+  -webkit-columns: 7 250px;
+  -webkit-columns: 250px;
+     -moz-columns: 7 250px;
+          columns: 7 250px;
+  -webkit-column-gap: 0.3em;
+     -moz-column-gap: 0.3em;
+          column-gap: 0.3em;
+}
+
+.simple-gallery a, .simple-gallery a:hover {
+  color: #61B6DA;
+}
+
+.simple-gallery a, .simple-gallery a:hover {
+  color: #61B6DA;
+}
+
+.simple-gallery .menu {
+  display: table;
+  width: 100%;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid-column;
+}
+
+.simple-gallery .menu > h1 {
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+}
+
+.simple-gallery .post .image-container img {
+  width: 100%;
+}
+
+.simple-gallery h1, .simple-gallery h2, .simple-gallery h3, .simple-gallery h4 {
+  background-color: #000;
+  color: #fff;
+  font-family: inherit;
+  font-weight: 100;
+  text-align: center;
+}
+
+.simple-gallery h1 > a, .simple-gallery h2 > a, .simple-gallery h3 > a, .simple-gallery h4 > a {
+  color: #fff;
+}
+
+.simple-gallery h1 {
+  padding: 18px;
+}
+
+.simple-gallery h2, .simple-gallery h3, .simple-gallery h4 {
+  padding: 6px;
+}
+
+.simple-gallery .post, .simple-gallery h1, .simple-gallery h2, .simple-gallery h3, .simple-gallery h4 {
+  display: table;
+  width: 100%;
+  margin: 0 0 4px 0;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid-column;
+}
+
+.simple-gallery .post.clickable {
+  cursor: pointer;
+}
+
+.simple-gallery .post.clickable:hover {
+  opacity: 0.8;
+}
+
+.simple-gallery .post .image-container {
+  position: relative;
+}
+
+.simple-gallery .post footer {
+  background: #000;
+  color: #fff;
+  padding: 12px;
+  text-align: center;
+  font-family: inherit;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.simple-gallery .post.clickable:hover .image-container::before, .simple-gallery .modal .post.clickable:hover .image-container::before {
+  font-family: 'Glyphicons Halflings';
+  position: absolute;
+  font-size: 70px;
+  color: rgba(255, 255, 255, 0.5);
+  left: 50%;
+  top: 50%;
+  margin-left: -35px;
+  margin-top: -50px;
+}
+
+.simple-gallery .post.clickable:hover .image-container::before {
+  content: "\e015";
+}
+
+.simple-gallery .modal .post.clickable:hover .image-container::before {
+  content:"\e016";
+}
+
+.simple-gallery .post.clickable.hyperlink:hover .image-container::before {
+  content:"\e144";
+}
+
+/*.simple-gallery .modal .post.clickable.hyperlink:hover .image-container::before {
+  content:"\e144";
+}*/
+
+.simple-gallery .post.clickable.presentation:hover .image-container::before {
+  content:"\e140";
+}
+
+.simple-gallery .post.clickable.video:hover .image-container::before {
+  content:"\e072";
+}
+
+/*.simple-gallery .modal .post.clickablevideo:hover .image-container::before {
+  content:"\e016";
+}*/
+
+.simple-gallery .modal .modal-dialog .modal-content {
+  text-align: center;
+  background: #000;
+}
+
+.simple-gallery .modal .modal-content {
+  border-radius: 0;
+}
+
+@media (max-width: 768px) {
+  .simple-gallery .modal .modal-dialog {
+    margin: 0 auto;
+  }
+}
+
+.simple-gallery .modal .post {
+  margin: 0;
+}
+
+.load-more-container { 
+  text-align: center; 
+  padding-bottom: 20px; 
+  padding-top: 10px; 
+}
+
+.simple-gallery .post {
+  position: relative;
+}
+
+.post .hyperlink {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.post footer .date {
+  font-size: 0.5em;
+  margin: 0;
+}
+
+.post footer p.content {
+  font-size: 0.7em;
+  text-align: left;
+  margin: 10px 0;
+  padding: 0 10px;
+}
+
+/*.category-icon-container {
+  position: absolute;
+  left: 50%;
+  top: -20px;
+  margin-left: -20px;
+  background: #000;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  z-index: 9999999;
+}
+
+.category-icon-container i {
+  color: #fff;
+  line-height: 34px;
+  width: 36px;
+  text-align: center;
+}*/

@@ -1,0 +1,18 @@
+<template name="Video">
+  <section class="post clickable video" data-toggle="modal" data-target="#modal-post">
+    {{#if isModal}}
+      {{{iframe}}}
+    {{else}}
+      {{#if image.src}}
+        <div class="image-container">
+          <img src="{{image.src}}">
+        </div>
+      {{/if}}
+    {{/if}}
+    <footer class="title">
+      <i class="glyphicon glyphicon-play"></i>
+      {{title}}
+      <p class="date">{{fromNow createdAt}}</p>
+    </footer>
+  </section>
+</template>

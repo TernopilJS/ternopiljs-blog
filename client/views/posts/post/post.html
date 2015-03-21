@@ -1,0 +1,17 @@
+<template name="Post">
+  {{#if isLink}}
+    {{> Link}}
+  {{/if}}
+  
+  {{#if isVideo}}
+    {{> Video}}
+  {{/if}}
+
+  {{#if isPresentation}}
+    {{> Presentation}}
+  {{/if}}
+
+  {{#if isNews}}
+    {{> News}}
+  {{/if}}
+</template>
