@@ -157,17 +157,37 @@
 }
 
 .post .hyperlink {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
+  text-align: center;
+  font-size: 0.6em;
+  width: 200px;
+  margin: 6px auto;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
 }
+
+.post .hyperlink a {
+  color: #3D46B5;
+  text-decoration: underline;
+}
+
+.post .hyperlink a {
+  color: #3D46B5;
+  text-decoration: underline;
+} 
+
+.post .hyperlink a:hover {
+  color: #3D46B5;
+  text-decoration: none;
+}  
 
 .post footer .date {
   font-size: 0.5em;
   margin: 0;
+}
+
+.post footer .title {
+  margin: 0 0 4px 0;
 }
 
 .post footer p.content {
@@ -175,6 +195,10 @@
   text-align: left;
   margin: 10px 0;
   padding: 0 10px;
+}
+
+.post footer i {
+  font-size: 0.7em;
 }
 
 a.category {
