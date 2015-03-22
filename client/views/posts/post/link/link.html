@@ -8,6 +8,9 @@
     <footer class="title">
       <i class="glyphicon glyphicon-link"></i>
       <p class="title">{{title}}</p>
+      {{#if content}}
+        <p class="content">{{content}}</p>
+      {{/if}}
       <p class="hyperlink center"><a href="{{url}}" target="_blank">{{url}}</a></p>
       <p class="date">{{fromNow createdAt}}</p>
     </footer>

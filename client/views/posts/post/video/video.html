@@ -12,6 +12,9 @@
     <footer class="title">
       <i class="glyphicon glyphicon-play"></i>
       <p class="title">{{title}}</p>
+      {{#if content}}
+        <p class="content">{{content}}</p>
+      {{/if}}
       <p class="date">{{fromNow createdAt}}</p>
     </footer>
   </section>

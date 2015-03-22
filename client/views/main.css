@@ -146,6 +146,14 @@
   margin: 0;
 }
 
+.simple-gallery .modal .post.clickable:hover {
+  opacity: 1;
+}
+
+.modal .comments {
+  padding: 20px;
+}
+
 .load-more-container { 
   text-align: center; 
   padding-bottom: 20px; 
