@@ -17,6 +17,7 @@ Template.Comments.onRendered(function () {
           this.page.identifier = post._id;  
           this.page.title = post.title || 'Title unknown';
           this.page.url = "http://ternopiljs.meteor.com/#!/" + post._id;
+          console.log('disqus this', this);
         }
       });
     }
