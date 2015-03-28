@@ -1,0 +1,13 @@
+<template name="AccountsModal">
+  <div class="modal fade" id="accounts-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        {{#if currentUser}}
+          Sign out.
+        {{else}}
+          {{> Login}}
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</template>
