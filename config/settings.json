@@ -1,0 +1,20 @@
+{
+  "accounts": {
+    "facebook": {
+      "appId": "",
+      "secret": ""
+    },
+    "google": {
+      "clientId": "",
+      "secret": ""
+    },
+    "twitter": {
+      "consumerKey": "",
+      "secret": ""
+    },
+    "meteor-developer": {
+      "appId": "aA3iJbkTWZrw2NZrm",
+      "secret": "YNaD24C59WWHcXzabfdYPCubye4QSoiCga"
+    }
+  }
+}
