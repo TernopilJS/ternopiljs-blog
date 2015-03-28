@@ -18,6 +18,9 @@ Template.Post.helpers({
   },
   isNews: function () {
     return this.category === 'news';
+  },
+  isQuestion: function () {
+    return this.category === 'questions';
   }
 });
 

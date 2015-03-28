@@ -15,7 +15,13 @@ Template.Posts.helpers({
   },
   showButton: function () {
     var limit = Template.instance().limit;
-    return limit.get() < Posts.find({category: this.category}).count();
+    var selector;
+    if (this.category) {
+      selector = {category: this.category};
+    } else {
+      selector = {};
+    }
+    return limit.get() < Posts.find(selector).count();
   }
 
 });

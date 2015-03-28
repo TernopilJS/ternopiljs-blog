@@ -6,7 +6,6 @@
 
 meteor-platform
 autopublish
-insecure
 iron:router
 momentjs:moment
 reactive-var
@@ -14,3 +13,12 @@ twbs:bootstrap
 nyablonskiy:meteor-comments
 aldeed:collection2
 reactive-dict
+accounts-facebook
+accounts-password
+accounts-github
+accounts-google
+accounts-twitter
+mrt:accounts-vk
+accounts-meteor-developer
+pauli:accounts-linkedin
+underscore
