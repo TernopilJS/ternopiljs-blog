@@ -1,22 +1,23 @@
 Meteor.startup(function() {
   if (Posts.find().count() === 0) {
-    for (var i = 0; i < 2; i++) {
+    var i = 0;
+    for (i = 0; i < 2; i++) {
       Posts.insert({
         url: 'http://meteor.com',
         category: 'links',
         title: 'Корисний ресурс',
-        createdAt: new Date
+        createdAt: new Date()
       });
     }
-    for (var i = 0; i < 2; i++) {
+    for (i = 0; i < 2; i++) {
       Posts.insert({
         category: 'news',
         title: 'Lorem news #' + i,
         content: 'Energistically unleash real-time e-business before exceptional web-readiness. Competently customize low-risk high-yield ROI through prospective synergy. Appropriately pontificate error-free core competencies via corporate content. Monotonectally maintain equity invested web services before long-term high-impact models.',
-        createdAt: new Date
+        createdAt: new Date()
       });
     }
-    for (var i = 0; i < 2; i++) {
+    for (i = 0; i < 2; i++) {
       Posts.insert({
         image: {
           src: 'https://pp.vk.me/c622829/v622829107/2750d/kePDmkuic2Y.jpg',
@@ -26,7 +27,7 @@ Meteor.startup(function() {
         title: 'Lorem videos #' + i
       });
     }
-    for (var i = 0; i < 2; i++) {
+    for (i = 0; i < 2; i++) {
       Posts.insert({
         image: {
           src: 'https://pp.vk.me/c622829/v622829107/27505/BPfm8_ycdpg.jpg',
@@ -34,7 +35,7 @@ Meteor.startup(function() {
         category: 'presentations',
         iframe: '<iframe src="//slides.com/ternopiljs/deck-3-5/embed" width="576" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
         title: 'Lorem presentations #' + i,
-        createdAt: new Date
+        createdAt: new Date()
       });
     }
   }
