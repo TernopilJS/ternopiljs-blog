@@ -11,3 +11,6 @@ iron:router
 momentjs:moment
 reactive-var
 twbs:bootstrap
+nyablonskiy:meteor-comments
+aldeed:collection2
+reactive-dict

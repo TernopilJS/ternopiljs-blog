@@ -7,7 +7,7 @@ Template.Comments.onRendered(function () {
       dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
-  this.autorun(function (){
+  Tracker.autorun(function (){
     var post = Session.get('reactivePost');
     console.log('=====POST=====', post);
     if ('undefined' !== typeof DISQUS && post._id) {

@@ -1,3 +1,5 @@
+aldeed:collection2@2.3.2
+aldeed:simple-schema@1.3.0
 autopublish@1.0.3
 autoupdate@1.2.0
 base64@1.0.3
@@ -37,6 +39,7 @@ minimongo@1.0.7
 mobile-status-bar@1.0.3
 momentjs:moment@2.9.0
 mongo@1.1.0
+nyablonskiy:meteor-comments@0.0.1
 observe-sequence@1.0.5
 ordered-dict@1.0.3
 random@1.0.3
