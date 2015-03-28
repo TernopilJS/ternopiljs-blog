@@ -20,7 +20,7 @@ Meteor.startup(function() {
     for (i = 0; i < 2; i++) {
       Posts.insert({
         image: {
-          src: 'https://pp.vk.me/c622829/v622829107/2750d/kePDmkuic2Y.jpg',
+          src: 'https://pp.vk.me/c622829/v622829107/2750d/kePDmkuic2Y.jpg'
         },
         category: 'videos',
         iframe: '<iframe width="560" height="315" src="https://www.youtube.com/embed/EJS_FQnNRgY" frameborder="0" allowfullscreen></iframe>',
@@ -30,7 +30,7 @@ Meteor.startup(function() {
     for (i = 0; i < 2; i++) {
       Posts.insert({
         image: {
-          src: 'https://pp.vk.me/c622829/v622829107/27505/BPfm8_ycdpg.jpg',
+          src: 'https://pp.vk.me/c622829/v622829107/27505/BPfm8_ycdpg.jpg'
         },
         category: 'presentations',
         iframe: '<iframe src="//slides.com/ternopiljs/deck-3-5/embed" width="576" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
