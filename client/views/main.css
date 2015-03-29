@@ -232,6 +232,7 @@ main .post {
 }
 
 .post footer p.content {
+  word-break: break-word;
   font-size: 0.7em;
   text-align: left;
   margin: 10px 0;
