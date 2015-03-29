@@ -17,11 +17,14 @@ Template.AddPostModal.events({
     object.createdAt = new Date();
     console.log(Posts.insert(object));
     $('#add-post-modal').modal('hide');
+    tmpl.category.set(null);
   },
 
-  'click .category': function (e, tmpl) {
+  'click #add-post-modal a.category': function (e, tmpl) {
     e.preventDefault();
     e.stopImmediatePropagation();
+    $('#add-post-modal a.category').removeClass('active');
+    $(e.target).addClass('active');
     tmpl.category.set($(e.target).data('category'));
   }
 });
@@ -39,7 +42,9 @@ Template.AddPostModal.helpers({
     }
     if (category === 'news') {
       return new Form({
-        content: true, 
+        content: {
+          required: true
+        }, 
         thumbnail: true
       });
     }
@@ -47,20 +52,25 @@ Template.AddPostModal.helpers({
       return new Form({
         content: true, 
         thumbnail: true,
-        iframe: true
+        iframe: {
+          required: true
+        }
       });
     }
     if (category === 'questions') {
       return new Form({
-        content: true, 
-        thumbnail: true,
+        content: {
+          required: true
+        }, 
       });
     }
     if (category === 'presentations') {
       return new Form({
         content: true, 
         thumbnail: true, 
-        iframe: true
+        iframe: {
+          required: true
+        }
       });
     };
     return false;
@@ -68,7 +78,7 @@ Template.AddPostModal.helpers({
 });
 
 Template.AddPostModal.onCreated(function () {
-  this.category = new ReactiveVar();
+  this.category = new ReactiveVar(null);
 });
 
 Template.AddPostModal.onRendered(function () {

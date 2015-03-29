@@ -11,10 +11,15 @@
   min-height: 10%
 }
 
-main a,
-main a:hover, main a:active, main a:focus {
-  outline: 0 none;
+main a:hover {
   color: #909090;
+}
+
+main a,
+main a:hover, 
+main a:active, 
+main a:focus {
+  outline: 0 none;
   text-decoration: none;
 }
 
@@ -237,11 +242,15 @@ main .post {
   font-size: 0.7em;
 }
 
-a.category {
+a.category, a.trigger {
   color: #2F2F2F;
   font-size: 1.15em;
   margin: 0 10px;
   line-height: 50px;
+}
+
+a.category.active {
+  color: #909090;
 }
 
 form[name="add-post"] {

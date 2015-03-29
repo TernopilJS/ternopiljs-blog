@@ -1,12 +1,12 @@
 <template name="Navigation">
   <div class="menu">
     <h1><a href="{{pathFor route='home'}}" alt="Home">TernopilJS</a>TernopilJS</h1>
-    <a href="#" class="category glyphicon glyphicon-plus" data-toggle="modal" data-target="#add-post-modal"></a>
-    <a href="{{pathFor route='categoryPage' name='links'}}" class="category glyphicon glyphicon-link"></a>
-    <a href="{{pathFor route='categoryPage' name='news'}}" class="category glyphicon glyphicon-bullhorn"></a>
-    <a href="{{pathFor route='categoryPage' name='videos'}}" class="category glyphicon glyphicon-play"></a>
-    <a href="{{pathFor route='categoryPage' name='presentations'}}" class="category glyphicon glyphicon-blackboard"></a>
-    <a href="{{pathFor route='categoryPage' name='questions'}}" class="category glyphicon glyphicon-question-sign"></a>
-    <a href="#" class="category glyphicon glyphicon-user" data-toggle="modal" data-target="#accounts-modal"></a>
+    <a href="#" class="trigger glyphicon glyphicon-plus" data-toggle="modal" data-target="#add-post-modal"></a>
+    <a href="{{pathFor route='categoryPage' name='links'}}" class="category links glyphicon glyphicon-link {{activeRouteClass 'links'}}"></a>
+    <a href="{{pathFor route='categoryPage' name='news'}}" class="category news glyphicon glyphicon-bullhorn {{activeRouteClass 'news'}}"></a>
+    <a href="{{pathFor route='categoryPage' name='videos'}}" class="category videos glyphicon glyphicon-play {{activeRouteClass 'videos'}}"></a>
+    <a href="{{pathFor route='categoryPage' name='presentations'}}" class="category presentations glyphicon glyphicon-blackboard {{activeRouteClass 'presentations'}}"></a>
+    <a href="{{pathFor route='categoryPage' name='questions'}}" class="category questions glyphicon glyphicon-question-sign {{activeRouteClass 'questions'}}"></a>
+    <a href="#" class="trigger glyphicon glyphicon-user" data-toggle="modal" data-target="#accounts-modal"></a>
   </div>
 </template>

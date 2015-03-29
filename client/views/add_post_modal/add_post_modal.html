@@ -13,27 +13,28 @@
               <form name="add-post">
                 {{#if title}}
                   <div class="form-group">
-                    <input type="text" name="title" placeholder="Title" class="form-control" required={{title.required}}>
+                    <input type="text" name="title" placeholder="Title{{#if title.required}} (required){{/if}}" class="form-control" required={{title.required}}>
                   </div>
                 {{/if}}
                 {{#if url}}
                   <div class="form-group">
-                    <input type="text" name="url" class="form-control" placeholder="URL" required="{{url.required}}">
+                    <input type="text" name="url" class="form-control" placeholder="URL{{#if url.required}} (required){{/if}}" required="{{url.required}}">
                   </div>
                 {{/if}}
                 {{#if thumbnail}}
                   <div class="form-group">
-                    <input type="file" name="thumbnail" class="form-control" required="{{thumbnail.required}}">
+                    <!-- <input type="file" name="thumbnail" class="form-control" required="{{thumbnail.required}}"> -->
+                    <input type="text" name="image[src]" class="form-control" placeholder="Image url{{#if thumbnail.required}} (required){{/if}}" required="{{url.required}}">
                   </div>
                 {{/if}}
                 {{#if iframe}}
                   <div class="form-group">
-                    <textarea name="iframe" placeholder="Embed Code" class="form-control" required="{{iframe.required}}"></textarea>
+                    <textarea name="iframe" placeholder="Embed Code{{#if iframe.required}} (required){{/if}}" class="form-control" required="{{iframe.required}}"></textarea>
                   </div>
                 {{/if}}
                 {{#if content}}
                   <div class="form-group">
-                    <textarea name="content" placeholder="Main text content" class="form-control" required="{{content.required}}"></textarea>
+                    <textarea name="content" placeholder="Main text content{{#if content.required}} (required){{/if}}" class="form-control" required="{{content.required}}"></textarea>
                   </div>
                 {{/if}}
                 <button type="submit" class="btn btn-default">Submit post</button>
