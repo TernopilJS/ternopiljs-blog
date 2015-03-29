@@ -1,6 +1,7 @@
 <template name="Navigation">
   <div class="menu">
     <h1><a href="{{pathFor route='home'}}" alt="Home">TernopilJS</a>TernopilJS</h1>
+    <a href="#" class="category glyphicon glyphicon-plus" data-toggle="modal" data-target="#add-post-modal"></a>
     <a href="{{pathFor route='categoryPage' name='links'}}" class="category glyphicon glyphicon-link"></a>
     <a href="{{pathFor route='categoryPage' name='news'}}" class="category glyphicon glyphicon-bullhorn"></a>
     <a href="{{pathFor route='categoryPage' name='videos'}}" class="category glyphicon glyphicon-play"></a>

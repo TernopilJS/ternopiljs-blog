@@ -11,13 +11,14 @@
   min-height: 10%
 }
 
-.simple-gallery a,
-.simple-gallery a:hover {
+main a,
+main a:hover, main a:active, main a:focus {
+  outline: 0 none;
   color: #909090;
   text-decoration: none;
 }
 
-.simple-gallery .menu {
+main .menu {
   display: table;
   text-align: center;
   width: 100%;
@@ -27,7 +28,7 @@
   break-inside: avoid-column;
 }
 
-.simple-gallery .menu > h1 {
+main .menu > h1 {
   position: relative;
   color: #2F2F2F;
   cursor: pointer;
@@ -37,7 +38,7 @@
   border: 1px solid #E7E7E7;
 }
 
-.simple-gallery .menu > h1 > a {
+main .menu > h1 > a {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -46,19 +47,19 @@
   color: transparent;
 }
 
-.simple-gallery .post.clickable:hover footer,
-.simple-gallery .menu > h1:hover {
+main .post.clickable:hover footer,
+main .menu > h1:hover {
   border-color: #D4D4D4;
 }
 
-.simple-gallery .post .image-container img {
+main .post .image-container img {
   width: 100%;
 }
 
-.simple-gallery h1,
-.simple-gallery h2,
-.simple-gallery h3,
-.simple-gallery h4 {
+main h1,
+main h2,
+main h3,
+main h4 {
   background-color: #fff;
   color: #2F2F2F;
   font-family: inherit;
@@ -66,28 +67,28 @@
   text-align: center;
 }
 
-.simple-gallery h1 > a,
-.simple-gallery h2 > a,
-.simple-gallery h3 > a,
-.simple-gallery h4 > a {
+main h1 > a,
+main h2 > a,
+main h3 > a,
+main h4 > a {
   color: #2F2F2F;
 }
 
-.simple-gallery h1 {
+main h1 {
   padding: 18px;
 }
 
-.simple-gallery h2,
-.simple-gallery h3,
-.simple-gallery h4 {
+main h2,
+main h3,
+main h4 {
   padding: 6px;
 }
 
-.simple-gallery .post,
-.simple-gallery h1,
-.simple-gallery h2,
-.simple-gallery h3,
-.simple-gallery h4 {
+main .post,
+main h1,
+main h2,
+main h3,
+main h4 {
   display: table;
   width: 100%;
   margin: 0 0 16px 0;
@@ -97,15 +98,15 @@
   break-inside: avoid-column;
 }
 
-.simple-gallery .post.clickable {
+main .post.clickable {
   cursor: pointer;
 }
 
-.simple-gallery .post .image-container {
+main .post .image-container {
   position: relative;
 }
 
-.simple-gallery .post footer {
+main .post footer {
   background: #FCFCFC;
   color: #2F2F2F;
   padding: 12px;
@@ -116,8 +117,8 @@
   border: 1px solid #E7E7E7;
 }
 
-.simple-gallery .post.clickable:hover .image-container::before,
-.simple-gallery .modal .post.clickable:hover .image-container::before {
+main .post.clickable:hover .image-container::before,
+main .modal .post.clickable:hover .image-container::before {
   font-family: 'Glyphicons Halflings';
   position: absolute;
   font-size: 70px;
@@ -128,35 +129,35 @@
   margin-top: -50px;
 }
 
-.simple-gallery .post.clickable:hover .image-container::before {
+main .post.clickable:hover .image-container::before {
   content: "\e015";
 }
 
-.simple-gallery .modal .post.clickable:hover .image-container::before {
+main .modal .post.clickable:hover .image-container::before {
   content: "\e016";
 }
 
-.simple-gallery .post.clickable.hyperlink:hover .image-container::before {
+main .post.clickable.hyperlink:hover .image-container::before {
   content: "\e144";
 }
 
-/*.simple-gallery .modal .post.clickable.hyperlink:hover .image-container::before {
+/*main .modal .post.clickable.hyperlink:hover .image-container::before {
   content:"\e144";
 }*/
 
-.simple-gallery .post.clickable.presentation:hover .image-container::before {
+main .post.clickable.presentation:hover .image-container::before {
   content: "\e140";
 }
 
-.simple-gallery .post.clickable.video:hover .image-container::before {
+main .post.clickable.video:hover .image-container::before {
   content: "\e072";
 }
 
-/*.simple-gallery .modal .post.clickablevideo:hover .image-container::before {
+/*main .modal .post.clickablevideo:hover .image-container::before {
   content:"\e016";
 }*/
 
-.simple-gallery .modal .modal-dialog .modal-content {
+main .modal .modal-dialog .modal-content {
   text-align: center;
   background: #FCFCFC;
   padding: 11px 6px;
@@ -164,16 +165,16 @@
 }
 
 @media (max-width: 768px) {
-  .simple-gallery .modal .modal-dialog {
+  main .modal .modal-dialog {
     margin: 0 auto;
   }
 }
 
-.simple-gallery .modal .post {
+main .modal .post {
   margin: 0;
 }
 
-.simple-gallery .modal .post.clickable:hover footer {
+main .modal .post.clickable:hover footer {
   border-color: #D4D4D4;
 }
 
@@ -187,7 +188,7 @@
   padding-top: 10px;
 }
 
-.simple-gallery .post {
+main .post {
   position: relative;
 }
 
@@ -238,9 +239,13 @@
 
 a.category {
   color: #2F2F2F;
-  font-size: 1.5em;
+  font-size: 1.15em;
   margin: 0 10px;
   line-height: 50px;
+}
+
+form[name="add-post"] {
+  margin-top: 14px;
 }
 
 /*.category-icon-container {
