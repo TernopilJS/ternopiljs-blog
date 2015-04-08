@@ -6,6 +6,8 @@ Comments.allow({
   }
 });
 
-Meteor.publish(null, function () {
-  return Comments.find();
-}); 
+if (Meteor.isServer) {
+  Meteor.publish(null, function () {
+    return Comments.find();
+  }); 
+}
