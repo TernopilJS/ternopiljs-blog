@@ -10,3 +10,9 @@ Posts.allow({
     return true;
   }
 });
+
+// if (Meteor.isServer) {
+//   Meteor.startup(function () {
+//     Posts._ensureIndex({content: 'text', title: 'text'});
+//   });
+// }

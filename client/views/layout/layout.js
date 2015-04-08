@@ -1,3 +1,18 @@
+Template.Layout.events({
+  'input #search-filter input': function (e, tmpl) {
+    tmpl.searchQuery.set($(e.target).val().trim());
+  }
+});
+
+Template.Layout.onCreated(function () {
+  var self = this;
+  this.searchQuery = new ReactiveVar();
+
+  this.autorun(function () {
+    self.subscribe('search', self.searchQuery.get(), limit.get());
+  });
+});
+
 Template.Layout.onRendered(function () {
   function adjustIframes() {
     $('iframe').each(function(){

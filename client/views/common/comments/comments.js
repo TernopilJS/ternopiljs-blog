@@ -1,3 +1,9 @@
+Template.Comments.helpers({
+  comments: function () {
+    return Comments.find();
+  }
+});
+
 Template.Comments.onRendered(function () {
   /* * * CONFIGURATION VARIABLES * * */
   var disqus_shortname = 'ternopiljs';

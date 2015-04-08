@@ -1,6 +1,10 @@
 <template name="Comments">
   <div class="comments">
-    <div id="disqus_thread"></div>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    <p>COMMENTS:</p>
+    {{#each comments}}
+      {{> Comment}}
+    {{/each}}
+    <!-- <div id="disqus_thread"></div>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript> -->
   </div>
 </template>
